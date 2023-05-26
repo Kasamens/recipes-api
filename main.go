@@ -1,3 +1,18 @@
+// Recipes API
+//
+//  Schemes: http
+//  Host: localhost:8080
+//  BasePath: /
+//  Version: 1.0.0
+//  Contact: Kojo Asamoa-Mensah
+//
+// Consumes:
+//  - application/json
+//
+// Produces:
+//  - application/json
+// swagger:meta
+
 package main
 
 import (
@@ -10,7 +25,7 @@ import (
 )
 
 type Recipe struct {
-	ID           string    `json:id`
+	ID           string    `json:"id"`
 	Name         string    `json:"name"`
 	Tags         []string  `json:"tags"`
 	Ingredients  []string  `json:"ingredients"`
